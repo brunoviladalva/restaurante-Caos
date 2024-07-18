@@ -34,6 +34,7 @@ h6 {
     overflow: hidden;
     background: #1a1814;
 }
+
 #preloader::before {
     content: "";
     position: fixed;
@@ -41,7 +42,7 @@ h6 {
     left: calc(50% - 30px);
     border: 6px solid #1a1814;
     border-top-color: #cda45e;
-    border-bottom-color:  #cda45e;
+    border-bottom-color: #cda45e;
     border-radius: 50%;
     width: 60px;
     height: 60px;
@@ -52,10 +53,12 @@ h6 {
     0% {
         transform: rotate(0deg);
     }
-    100%{
+
+    100% {
         transform: rotate(360deg);
     }
 }
+
 /* back to top button */
 .back-to-top {
     position: fixed;
@@ -141,6 +144,7 @@ h6 {
     font-family: "", serif;
     /* font-family: "Poppins", sans-serif; */
 }
+
 #header .logo a {
     color: #ececec;
     /* color: #cda45e; */
@@ -217,14 +221,14 @@ h6 {
 }
 
 .navbar a:hover,
-.navbar .active, 
-.navbar .active:focus, 
+.navbar .active,
+.navbar .active:focus,
 .navbar li:hover>a {
     color: #d9ba85;
 }
 
 @media (max-width: 1366px) {
-    .navbar ul {   
+    .navbar ul {
         left: -90%;
     }
 }
@@ -282,15 +286,15 @@ h6 {
     transition: 0.3s;
 }
 
-.navbar-mobile a, 
+.navbar-mobile a,
 .navbar-mobile a:focus {
     padding: 10px 20px;
     font-size: 15px;
     color: #1a1814;
 }
 
-.navbar-mobile a:hover, 
-.navbar-mobile .active, 
+.navbar-mobile a:hover,
+.navbar-mobile .active,
 .navbar-mobile li:hover>a {
     color: #cda45e;
 }
@@ -362,7 +366,7 @@ h6 {
     transition: 0.3s;
 }
 
-#hero .btn-menu:hover, 
+#hero .btn-menu:hover,
 #hero .btn-book:hover {
     background: #cda45e;
     color: #1a1814;
@@ -375,7 +379,7 @@ h6 {
 #hero .play-btn {
     width: 94px;
     height: 94px;
-    background: radial-gradient( #cda45e 50%, rgba(205, 164, 94, 0.4) 52%);
+    background: radial-gradient(#cda45e 50%, rgba(205, 164, 94, 0.4) 52%);
     border-radius: 50%;
     display: block;
     position: relative;
@@ -395,7 +399,7 @@ h6 {
     border-left: 15px solid #ececec;
     z-index: 100;
     transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
-}   
+}
 
 #hero .play-btn::before {
     content: "";
@@ -464,6 +468,7 @@ h6 {
         font-size: 40px;
         line-height: 36px;
     }
+
     #hero h2 {
         font-size: 20px;
         line-height: 24px;
@@ -475,15 +480,16 @@ h6 {
         transform: scale(0.6, 0.6);
         opacity: 1;
     }
+
     100% {
         transform: scale(1, 1);
         opacity: 0;
     }
 }
 
-/*  CSS Geral - sections*/
+/* CSS Geral - Sections */
 section {
-    padding: 60px 0 ;
+    padding: 60px 0;
     overflow: hidden;
 }
 
@@ -512,20 +518,20 @@ section {
     width: 120px;
     height: 1px;
     display: inline-block;
-    background: rgba(255,255,255,0.2);
+    background: rgba(255, 255, 255, 0.2);
     margin: 4px 10px;
 }
 
 .section-title p {
     margin: 0;
-    margin: 0;
+    padding: 0;
     font-size: 36px;
     font-weight: 700;
     font-family: "Playfair Display", serif;
     color: #cda45e;
 }
 
-/* --------- Sobre = About ----------*/
+/*------ Sobre = About ------*/
 
 .about {
     background: url("../img/about-bg.jpg") center center;
@@ -536,13 +542,14 @@ section {
 
 .about::before {
     content: "";
-    background: rgba(0,0,0,0.8);
+    background: rgba(0, 0, 0, 0.8);
     position: absolute;
     bottom: 0;
     top: 0;
     left: 0;
     right: 0;
 }
+
 .about .about-img {
     position: relative;
     transition: 0.5s;
@@ -550,9 +557,10 @@ section {
 
 .about .about-img img {
     max-width: 100%;
-    border: 4px solid rgba(255,255,255,0.2);
+    border: 4px solid rgba(255, 255, 255, 0.2);
     position: relative;
 }
+
 .about .about-img::before {
     content: "";
     position: absolute;
@@ -588,7 +596,7 @@ section {
     top: 10px;
 }
 
-.about .about-img:hover::after{
+.about .about-img:hover::after {
     right: 10px;
     bottom: 10px;
 }
@@ -607,6 +615,10 @@ section {
     padding: 0;
 }
 
+.about .content ul li {
+    padding-bottom: 10px;
+}
+
 .about .content ul i {
     font-size: 20px;
     padding-right: 4px;
@@ -623,11 +635,12 @@ section {
     }
 }
 
-/*   Whi - us*/
-
-.why-us  .box {
+/* ---------------------- 
+# Why Us
+---------------------- */
+.why-us .box {
     padding: 50px 30px;
-    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
     transition: all ease-in-out 0.3s;
     background: #1a1814;
 }
@@ -638,30 +651,173 @@ section {
     font-weight: 700;
     color: #cda45e;
 }
+
 .why-us .box h4 {
     font-size: 24px;
     font-weight: 600;
     padding: 0;
     margin: 20px 0;
-    color: rgba(255,255,255,0.8);
+    color: rgba(255, 255, 255, 0.8);
 }
-.why-us .box us p {
+
+.why-us .box p {
     color: #aaa;
     font-size: 15px;
     margin: 0;
     padding: 0;
 }
+
 .why-us .box:hover {
     background: #cda45e;
     padding: 30px 30px 70px 30px;
-    box-shadow: 10px 15px 30px rgba(0,0,0,0.18);
+    box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.18);
 }
 
 .why-us .box:hover span,
 .why-us .box:hover h4,
-.why-us .box:hover p {
+.why-us .box:hover p{
     color: #ececec;
 }
 
+/* Menu Section */
+
+.menu #menu-filters {
+    padding: 0;
+    margin: 0 auto 0 auto;
+    list-style: none;
+    text-align: center;
+    border-radius: 50px;
+}
+
+.menu #menu-filters li {
+    cursor: pointer;
+    display: inline-block;
+    padding: 8px 12px 10px 12px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1;
+    color: #ececec;
+    font-family: "Playfair Display", serif;
+    transition: all ease-in-out 0.3s;
+    border-radius: 50px;
+    /* border: 1px solid #cda45e; */
+}
+
+.menu #menu-filters li:hover, 
+.menu #menu-filters li.filter-active {
+    color: #cda45e;
+}
+
+.menu .menu-item {
+    margin-top: 50px;
+}
+
+.menu .menu-img {
+    width: 70px;
+    border-radius: 50%;
+    float: left;
+    border: 3px solid rgba(247, 148, 68, 0.5);
+}
+
+.menu .menu-content {
+    position: relative;
+    margin-left: 85px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu .menu-content::after {
+    content: ".....................................................................................";
+    position: absolute;
+    left: 20px;
+    right: 0;
+    top: -4px;
+    z-index: 1;
+    color: #aaa;
+    font-family: Arial, "Helvetica Nue", Helvetica, sans-serif;
+}
+
+.menu .menu-content a {
+    padding-right: 10px;
+    background: #1a1814;
+    position: relative;
+    z-index: 3;
+    font-weight: 700;
+    color: white;
+    transform: 0.3s;
+}
+
+.menu .menu-content a:hover {
+    color: #cda45e;
+}
+
+.menu .menu-content span {
+    position: relative;
+    z-index: 3;
+    padding: 0 10px;
+    font-weight: 600;
+    color: #cda45e;
+}
+
+.menu .menu-ingredients {
+    margin-left: 85px;
+    font-style: italic;
+    font-size: 14px;
+    font-family: "Poppins" sans-serif;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* --- Pratos Especiais  -----   */
+.specials {
+    overflow: hidden;
+}
+
+.specials .nav-tabs {
+    border: 0;
+}
+
+.specials .nav-link {
+    border: 0;
+    padding: 12px 15px;
+    transition: 0.3s;
+    color: #ececec;
+    border-radius: 0;
+    border-right: 2px solid #cda45e;
+    font-weight: 600;
+    font-size: 15px;
+}
+.specials .nav-link:hover {
+    color: #cda45e;
+}
+.specials .nav-link.active {
+    color: #1a1814;
+    background: #cda45e;
+    border-color: #cda45e;
+}
+
+.specials .tab-pane.active {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.specials .details h3 {
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #d9ba85;   
+}
+
+.specials .details p {
+    color: #ececec;
+    text-align: justify;
+}
+
+@media (max-width: 992px) {
+    .specials .nav-link {
+        border: 0;
+        padding: 15px;
+    }
+}
 
 
